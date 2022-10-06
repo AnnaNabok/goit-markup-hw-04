@@ -146,6 +146,24 @@ img {
   letter-spacing: 0.02em;
 }
 
+/* .auth-nav.item::before {
+  display: block;
+  content: "";
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: inherit;
+  background-position: center;
+}
+
+.auth-nav.mail::before {
+  background-image: url(../images/envelope.svg);
+}
+
+.auth-nav.mail::before {
+  background-image: url(../images/smartphone.svg);
+} */
+
 .auth-nav .item + .item {
   margin-left: 50px;
 }
@@ -156,6 +174,22 @@ img {
   background-color: #2f303a;
   padding-top: 200px;
   padding-bottom: 200px;
+
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+
+  background-color: #c4c4c4;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    )
+    url(../images/hero-background-image.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .hero-title {
@@ -189,10 +223,6 @@ img {
 .hero-button:focus {
   background-color: #188ce8;
 }
-/* .hero.button:hover,
-.hero.button:focus {
-    background-color: #......; Чекаю на скріншот, де в макеті подивитися
-} */
 
 .advantages {
   font-size: 14px;
@@ -220,6 +250,35 @@ ul.advantages-list {
 
 .advantages-item {
   flex-basis: calc((100%-90px) / 4);
+}
+
+.advantages-item::before {
+  display: block;
+  content: "";
+  height: 120px;
+  margin-bottom: 30px;
+  /* background-image: url(../images/); */
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  background-position: center;
+}
+
+.icon-details::before {
+  background-image: url(../images/antena.svg);
+}
+
+.icon-punktuality::before {
+  background-image: url(../images/clock.svg);
+}
+
+.icon-planning::before {
+  background-image: url(../images/diagram.svg);
+}
+
+.icon-modern-tech::before {
+  background-image: url(../images/astronaut.svg);
 }
 
 .advantages-title {
@@ -296,6 +355,36 @@ div.team-member-description {
   margin-bottom: 10px;
 }
 
+.team-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.team-soc-item {
+}
+
+.team-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.clients-list {
+  display: flex;
+  gap: 30px;
+}
+
+.clients-item {
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+/* ----pogtfolio------ */
 .portfolio {
   background-color: var(--light-text-color);
   padding: 94px 0;
@@ -380,6 +469,20 @@ div.team-member-description {
 }
 .footer .address-link {
   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-container {
+  display: flex;
+  gap: 70px;
+}
+
+.invitation {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--light-text-color);
 }
 
 /* buttons */
