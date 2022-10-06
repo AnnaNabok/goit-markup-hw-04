@@ -147,28 +147,24 @@ img {
   letter-spacing: 0.02em;
 }
 
-/* .auth-nav.item::before {
-  display: block;
-  content: "";
-  height: 16px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-color: inherit;
-  background-position: center;
-}
-
-.auth-nav.mail::before {
-  background-image: url(../images/envelope.svg);
-}
-
-.auth-nav.mail::before {
-  background-image: url(../images/smartphone.svg);
-} */
-
 .auth-nav .item + .item {
   margin-left: 50px;
 }
+/* ------------------------icons----------------- */
+.address-icon {
+  fill: var(--medium-text-color);
+  margin-right: 10px;
+}
 
+.auth-nav-item {
+  display: flex;
+  justify-content: center;
+}
+
+.auth-nav-item:hover .address-icon .auth-nav-item:focus .address-icon {
+  fill: var(--accent-color);
+}
+/* -----------------hero------------------- */
 .hero {
   color: var(--light-text-color);
   text-align: center;
@@ -224,7 +220,7 @@ img {
 .hero-button:focus {
   background-color: #188ce8;
 }
-
+/* ------------------advantages------------------ */
 .advantages {
   font-size: 14px;
   padding-bottom: 0;
@@ -533,9 +529,6 @@ div.team-member-description {
   align-items: center;
   justify-content: center;
   background-color: rgba(255, 255, 255, 0.1);
-}
-
-.footer-soc-icon {
   fill: var(--light-text-color);
 }
 
