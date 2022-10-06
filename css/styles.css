@@ -15,6 +15,7 @@ html {
   --accent-color: #2196f3;
   --light-background-color: #f5f5f5;
   --main-font: "Roboto", sans-serif;
+  --primary-icon-color: #afb1b8;
 }
 
 body {
@@ -360,9 +361,7 @@ div.team-member-description {
   align-items: center;
   justify-content: center;
   margin-top: 16px;
-}
-
-.team-soc-item {
+  gap: 10px;
 }
 
 .team-soc-link {
@@ -372,6 +371,23 @@ div.team-member-description {
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: var(--light-text-color);
+}
+
+.team-soc-link:hover,
+.team-soc-link:focus,
+.footer-soc-link:hover,
+.footer-soc-link:focus {
+  background-color: var(--accent-color);
+}
+
+.team-soc-link:hover .team-soc-icon,
+.team-soc-link:focus .team-soc-icon {
+  fill: var(--light-text-color);
+}
+
+.team-soc-icon {
+  fill: var(--primary-icon-color);
 }
 
 .clients-list {
@@ -379,9 +395,24 @@ div.team-member-description {
   gap: 30px;
 }
 
+.clients-icon {
+  fill: var(--primary-icon-color);
+}
+
+.clients-icon:hover,
+.clients-icon:focus {
+  fill: var(--accent-color);
+}
+
 .clients-item {
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
+}
+
+.clients-item:hover,
+.clients-item:focus {
+  border: 1px solid var(--accent-color);
+  fill: var(--accent-color);
 }
 
 /* ----pogtfolio------ */
@@ -483,9 +514,32 @@ div.team-member-description {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--light-text-color);
+  margin-top: 12px;
 }
 
-/* buttons */
+.footer-soc-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+.footer-soc-link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-soc-icon {
+  fill: var(--light-text-color);
+}
+
+/* -----------------buttons-------------------------- */
 .button {
   color: var(--dark-text-color);
   background-color: var(--light-background-color);
