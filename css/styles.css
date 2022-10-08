@@ -154,8 +154,6 @@ img {
 .address-icon {
   fill: var(--medium-text-color);
   margin-right: 10px;
-  align-items: center;
-  justify-content: center;
 }
 
 .auth-nav-item {
@@ -163,13 +161,18 @@ img {
   justify-content: center;
 }
 
-.auth-nav-item:hover .address-icon,
-.auth-nav-item:focus .address-icon {
-  fill: var(--accent-color);
+.auth-nav-link {
+  display: flex;
+  align-items: center;
 }
 
-.auth-nav-item:hover,
-.auth-nav-item:focus {
+.auth-nav-link:hover,
+.auth-nav-link:focus {
+  color: var(--accent-color);
+}
+
+.auth-nav-link:hover .address-icon,
+.auth-nav-link:focus .address-icon {
   fill: var(--accent-color);
 }
 
@@ -190,7 +193,7 @@ img {
       to right,
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
-    )
+    ),
     url(../images/hero-background-image.jpg);
 
   background-repeat: no-repeat;
@@ -263,8 +266,6 @@ ul.advantages-list {
   content: "";
   height: 120px;
   margin-bottom: 30px;
-  /* background-image: url(../images/); */
-  background-size: contain;
   background-repeat: no-repeat;
   background-color: #f5f4fa;
   border-radius: 4px;
@@ -313,10 +314,6 @@ h2 {
   text-align: center;
 }
 
-/* .align-center {
-  text-align: center;
-} */
-
 .portfolio-main {
   background-color: var(--light-text-color);
 }
@@ -331,6 +328,7 @@ h2 {
   padding: 0;
 }
 
+/* ------------------team----------------------- */
 .team {
   line-height: 1.19;
   background-color: #f5f4fa;
@@ -394,7 +392,7 @@ div.team-member-description {
 .team-soc-icon {
   fill: var(--primary-icon-color);
 }
-
+/* ------------------------clients------------------------ */
 .clients-list {
   display: flex;
   gap: 30px;
@@ -420,7 +418,7 @@ div.team-member-description {
   fill: var(--accent-color);
 }
 
-/* ----pogtfolio------ */
+/* ------------------------------pogtfolio---------------------- */
 .portfolio {
   background-color: var(--light-text-color);
   padding: 94px 0;
