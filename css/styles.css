@@ -398,6 +398,12 @@ div.team-member-description {
   gap: 30px;
 }
 
+.clients-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .clients-icon {
   fill: var(--primary-icon-color);
 }
@@ -410,6 +416,7 @@ div.team-member-description {
 .clients-item {
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
+  padding: 16px 32px;
 }
 
 .clients-item:hover,
