@@ -410,7 +410,6 @@ div.team-member-description {
 .clients-item {
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  /* padding: 16px 32px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -419,7 +418,6 @@ div.team-member-description {
 
 .clients-item:hover .clients-icon,
 .clients-item:focus .clients-icon {
-  /* border: 1px solid var(--accent-color); */
   fill: var(--accent-color);
 }
 
