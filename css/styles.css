@@ -398,12 +398,6 @@ div.team-member-description {
   gap: 30px;
 }
 
-.clients-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
 .clients-icon {
   fill: var(--primary-icon-color);
 }
@@ -416,13 +410,22 @@ div.team-member-description {
 .clients-item {
   border: 1px solid var(--primary-icon-color);
   border-radius: 4px;
-  padding: 16px 32px;
+  /* padding: 16px 32px; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc((100%-150) / 6);
+}
+
+.clients-item:hover .clients-icon,
+.clients-item:focus .clients-icon {
+  /* border: 1px solid var(--accent-color); */
+  fill: var(--accent-color);
 }
 
 .clients-item:hover,
 .clients-item:focus {
   border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
 }
 
 /* ------------------------------pogtfolio---------------------- */
