@@ -514,6 +514,7 @@ div.team-member-description {
   color: var(--medium-text-color);
 }
 
+/* ---------------------footer--------------------- */
 .logo-white-secondpart {
   color: var(--light-text-color);
 }
@@ -534,9 +535,10 @@ div.team-member-description {
   font-style: normal;
 }
 
-/* .address-item {
+.address-item {
   display: block;
-} */
+  margin-bottom: 9px;
+}
 
 .map-link,
 .address-link:not(:nth-last-child(n)) {
