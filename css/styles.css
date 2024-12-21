@@ -233,7 +233,7 @@ font-style: normal;
     height: 600px;
     background-color: #2e2f42;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/hero-bg.jpg');
-    background-position: 0 0; 
+    background-position: center;
     background-repeat: no-repeat; 
     background-size: cover;
     background-clip: padding-box;
@@ -391,7 +391,7 @@ flex-basis: calc((100% - 72) / 4);
 
 .social-link:hover,
 .social-link:focus {
-background-color: #31D0AA;
+background-color: #404bbf;
 }
 
 /* .social-link:hover .social-list-icon,
@@ -478,7 +478,6 @@ transform: translateY(0);
 
 .footer .container {
     display: flex;
-    gap: 120px;
     align-items: first baseline;
 }
 
@@ -491,14 +490,26 @@ margin-bottom: 16px;
     color: #f4f4fd;
 }
 
+.footer-column-logo {
+    margin-right: 120px;
+}
+
 .footer-text {
 color: #f4f4fd;
 width: 264px;
+}
+.social-footer {
+    font-weight: 500;
+    margin-bottom: 16px;
 }
 
 .footer .social-list {
     gap: 16px;
     justify-content: flex-start;
-    margin-top: 16px;
+}
+
+.social-link:hover,
+.social-link:focus {
+    background-color: #31D0AA;
 }
 /* #endregion FOOTER*/
