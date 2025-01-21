@@ -162,21 +162,22 @@ font-weight: 500;
 .contacts-item:hover::after,
 .contacts-item:focus::after
  {
-    content: '';
+    content: "";
     background-color: #404bbf;
     width: 100%;
     display: block;
     height: 4px;
-border-radius: 2px;
-position: absolute;
-bottom: -1px;
-display: block; 
+    border-radius: 2px;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    display: block; 
 }
 
-.header .logo:hover::after,
+/* .header .logo:hover::after,
 .header .logo:focus::after {
     bottom: -3px;
-}
+} */
 
 .nav-list-link {
     font-weight: 500;
