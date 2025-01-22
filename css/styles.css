@@ -154,6 +154,10 @@ font-weight: 500;
     position: relative;
 }
 
+.current .nav-list-link {
+    color: #404bbf;
+}
+
 .current::after {
     content: "";
     background-color: #404bbf;
