@@ -154,20 +154,7 @@ font-weight: 500;
     position: relative;
 }
 
-/* .current {
-background-color: #404bbf;
-    width: 100%;
-    display: block;
-    height: 4px;
-    border-radius: 2px;
-    position: absolute;
-    bottom: -1px;
-    left: 0;
-    display: block;
-} */
-
-.nav-item:hover::after,
-.nav-item:focus::after {
+.current::after {
     content: "";
     background-color: #404bbf;
     width: 100%;
