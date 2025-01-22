@@ -459,8 +459,8 @@ color: #2e2f42;
     overflow: auto;
 }
 
-.portfolio-overlay-link:hover .overlay,
-.portfolio-overlay-link:focus .overlay {
+.portfolio-item:hover .overlay,
+.portfolio-item:focus .overlay {
 transform: translateY(0%);
 }
 
