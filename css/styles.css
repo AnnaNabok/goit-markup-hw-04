@@ -154,7 +154,7 @@ font-weight: 500;
     position: relative;
 }
 
-.current .nav-list-link {
+.current {
     color: #404bbf;
 }
 
