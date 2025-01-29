@@ -154,10 +154,6 @@ font-weight: 500;
     position: relative;
 }
 
-.current {
-    color: #404bbf;
-}
-
 .current::after {
     content: "";
     background-color: #404bbf;
@@ -187,6 +183,10 @@ font-weight: 500;
 
 .nav-list-link:hover,
 .nav-list-link:focus {
+    color: #404bbf;
+}
+
+.current {
     color: #404bbf;
 }
 
@@ -312,7 +312,6 @@ width: 264px;
     align-items: center;
     justify-content: center;
     background-repeat: no-repeat;
-    /* background-position: 50%; */
     margin-bottom: 8px;
 }
 
